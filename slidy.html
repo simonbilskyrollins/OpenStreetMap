@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="" />
+  <title>OpenStreetMap</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <style>
+  div.slide h1 {
+    padding-left: 0;
+    padding-right: 20pt;
+    padding-top: 4pt;
+    padding-bottom: 4pt;
+    margin-top: 12pt;
+    margin-left: 10pt;
+    margin-right: 60pt;
+    margin-bottom: 0.5em;
+    display: block; 
+    font-size: 160%;
+    line-height: 1.2em;
+    background: transparent;
+  }
+  div.slide img {
+    height: 320pt;
+  }
+  </style>
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">OpenStreetMap</h1>
+  <p class="author">
+<img src="http://www.openstreetmap.org/assets/osm_logo-bfdfd8749f46ea7c92950a82eeb425045cddfc0725e8281799d0efdde45c425d.svg" />
+  </p>
+  <p class="date">Simon Bilsky-Rollins</p>
+</div>
+<div id="outline" class="slide section level1">
+<h1>Outline</h1>
+<ul>
+<li>What is OpenStreetMap?</li>
+<li>What can you use OpenStreetMap for?</li>
+<li>Extracting data from OpenStreetMap</li>
+<li>Working with OpenStreetMap data</li>
+<li>Problems and limitations</li>
+</ul>
+</div>
+<div id="what-is-openstreetmap" class="slide section level1">
+<h1>What is OpenStreetMap?</h1>
+<ul>
+<li>A collaborative mapping platform</li>
+<li>A great source of open data</li>
+</ul>
+</div>
+<div id="what-can-you-use-openstreetmap-for" class="slide section level1">
+<h1>What can you use OpenStreetMap for?</h1>
+<ul>
+<li>Getting a free and open global dataset of geographic features
+<ul>
+<li>Points of interest, roads, buildings, parks, political borders, etc.</li>
+</ul></li>
+<li>Getting a free and open <a href="http://www.openstreetmap.org/#map=15/44.4588/-93.1620">basemap</a> for web applications
+<ul>
+<li>One rule: <img src="http://www.openstreetmap.org/assets/attribution_example-937610fe671db6f42d3666d91fd7a1b1035d0df26066b890e4c007a314fc2da3.png" style="width: 193px; height: 69px;"></li>
+</ul></li>
+<li>Contributing to the collaborative mapping community!</li>
+</ul>
+</div>
+<div id="extracting-data-from-openstreetmap" class="slide section level1">
+<h1>Extracting data from OpenStreetMap</h1>
+<p>Step 1: identify the specific map features you're interested in</p>
+<ul>
+<li><a href="http://wiki.openstreetmap.org/wiki/Map_Features">OSM Wiki: master list of features</a></li>
+<li><a href="https://taginfo.openstreetmap.org/">TagInfo: interactive feature database</a></li>
+<li><a href="http://tagfinder.herokuapp.com/">TagFinder: search based on the TagInfo database</a></li>
+</ul>
+</div>
+<div id="extracting-data-from-openstreetmap-1" class="slide section level1">
+<h1>Extracting data from OpenStreetMap</h1>
+<p>Step 2: identify the scope of your query (local, state, national, international)</p>
+<ul>
+<li>Small queries: <a href="http://overpass-turbo.eu/">Overpass</a>*</li>
+<li>Large queries: <a href="http://osm2shp.ru/">Osm2Shp</a></li>
+</ul>
+<p>* Use Osm2Shp if you care about other attributes of the features you're extracting</p>
+<p><a href="http://overpass-turbo.eu/s/p8Y">Sample Overpass query</a></p>
+</div>
+<div id="importing-data-into-arcgis" class="slide section level1">
+<h1>Importing data into ArcGIS</h1>
+<ul>
+<li>Points and polygons come in separate layers</li>
+<li>Be ready to deal with missing data!</li>
+</ul>
+</div>
+</body>
+</html>
