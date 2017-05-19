@@ -52,3 +52,9 @@ Step 2: identify the scope of your query (local, state, national, international)
 
 * Points and polygons come in separate layers
 * Be ready to deal with missing data!
+
+# Problems and limitations
+
+* OpenStreetMap contributors tend to come from wealthy Western countries, and the data reflects that
+* Missing data
+* Inconsistencies in feature tagging
